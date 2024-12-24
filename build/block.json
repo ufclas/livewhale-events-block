@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/livewhale-events-block",
+  "version": "0.1.0",
+  "title": "Livewhale Events Block",
+  "category": "widgets",
+  "icon": "calendar-alt",
+  "description": "Displays events from a LiveWhale calendar given the id",
+  "example": {},
+  "attributes": {
+    "liveWhaleEventsTitle": {
+      "type": "string"
+    },
+    "liveWhaleID": {
+      "type": "number"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "livewhale-events-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}

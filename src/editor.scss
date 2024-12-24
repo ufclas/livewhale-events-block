@@ -1,0 +1,248 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-livewhale-events-block {
+	background-color: unset;
+}
+
+/* Event Shell */
+.editor-styles-wrapper .event-shell {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.event-shell .event-shell-wrapper .event-shell-carousel {
+	max-width: 1720px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 800px) {
+	.event-shell .event-shell-wrapper .event-shell-carousel {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+}
+
+.event-shell .slick-list {
+	max-width: 1420px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.event-shell h2,
+.event-shell .h2 {
+	letter-spacing: 0.2em;
+	text-align: left;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+@media (min-width: 800px) {
+
+	.event-shell h2,
+	.event-shell .h2 {
+		font-size: 48px;
+		line-height: 54px;
+	}
+}
+
+.event-shell {
+	-webkit-flex: 1 1 0%;
+	flex: 1 1 0%;
+	max-width: none;
+	width: auto;
+	display: inline-flex;
+	text-decoration: none;
+	transition: none !important;
+}
+
+.event-shell:hover,
+.event-shell:focus {
+	background-color: #F4F6F6;
+}
+
+.event-shell .inner-txt {
+	padding: 35px;
+	text-decoration: none;
+}
+
+.event-shell .inner-txt a {
+	text-decoration: none;
+}
+
+.event-shell .inner-txt .date {
+	color: #0021A5;
+	font-weight: 100;
+	font-size: 48px;
+	line-height: 48px;
+}
+
+.event-shell .inner-txt .time {
+	font-weight: 100;
+	color: #000;
+	font-size: 19px;
+	line-height: 24px;
+}
+
+.event-shell .inner-txt hr {
+	background: #FA4616;
+	opacity: 1;
+	margin: 1rem 0;
+	color: #FA4616;
+}
+
+.event-shell .inner-txt h3,
+.event-shell .inner-txt .h3 {
+	font-family: "gentonasemibold";
+	color: #0021A5;
+	line-height: 26px;
+	font-size: 24px;
+	text-align: left;
+	text-transform: unset;
+}
+
+.event-shell .inner-txt .event-subtext {
+	color: #000;
+	font-size: 19px;
+	font-weight: 100;
+	display: none;
+}
+
+@media (min-width: 767px) {
+	.event-shell .inner-txt .event-subtext {
+		display: block;
+	}
+}
+
+.event-shell .carousel-control-prev,
+.event-shell .carousel-control-next {
+	width: 40px;
+	opacity: 1;
+	transition: all 0.2s ease;
+	top: -40px;
+}
+
+.event-shell .carousel-control-next {
+	right: -20px;
+	justify-content: end;
+	opacity: 1;
+}
+
+@media (min-width: 800px) {
+	.event-shell .carousel-control-next {
+		right: -50px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.event-shell .carousel-control-next {
+		right: 10px !important;
+	}
+}
+
+.event-shell .carousel-control-next:hover .carousel-control-next-icon svg path,
+.event-shell .carousel-control-next:focus .carousel-control-next-icon svg path {
+	fill: #fa4616;
+}
+
+.event-shell .carousel-control-next .carousel-control-next-icon {
+	width: 30px;
+	height: 100px;
+	background-image: unset;
+}
+
+.event-shell .carousel-control-next .carousel-control-next-icon svg path {
+	transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 800px) {
+	.event-shell .carousel-control-next .carousel-control-next-icon {
+		width: 40px;
+		height: 120px !important;
+	}
+}
+
+.event-shell .carousel-control-prev {
+	left: -20px;
+	justify-content: start;
+	opacity: 1;
+}
+
+@media (min-width: 800px) {
+	.event-shell .carousel-control-prev {
+		left: -50px;
+	}
+}
+
+@media (min-width: 1920px) {
+	.event-shell .carousel-control-prev {
+		left: 10px !important;
+	}
+}
+
+.event-shell .carousel-control-prev:hover .carousel-control-prev-icon svg path,
+.event-shell .carousel-control-prev:focus .carousel-control-prev-icon svg path {
+	fill: #fa4616;
+}
+
+.event-shell .carousel-control-prev .carousel-control-prev-icon {
+	width: 30px;
+	height: 100px;
+	background-image: unset;
+}
+
+.event-shell .carousel-control-prev .carousel-control-prev-icon svg path {
+	transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 800px) {
+	.event-shell .carousel-control-prev .carousel-control-prev-icon {
+		width: 40px;
+		height: 120px;
+	}
+}
+
+.event-shell .calendar-slider {
+	padding-right: 60px;
+	padding-left: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+.event-description {
+	max-height: 100px;
+	/* Adjust this value as needed */
+	overflow: hidden;
+	position: relative;
+	padding-right: 30px;
+	/* To ensure ellipsis does not overlap text */
+	line-height: 1.4em;
+	/* Example line height, adjust as needed */
+}
+
+.event-description::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 30px;
+	height: 1.4em;
+	/* Same as line-height */
+	background: none;
+}
+
+.editor-styles-wrapper .event-shell h2,
+.editor-styles-wrapper .event-shell .h2 {
+	text-align: left;
+}
+
+.lwcw.slick.event-shell-carousel.py-5.edited {
+	display: none !important;
+}
